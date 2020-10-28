@@ -84,5 +84,17 @@ namespace LinkedList
                 node.next = after;
             }
         }
+        public Node RemoveFirstElement()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List is empty.");
+            }
+            else
+            {
+                head = head.next;
+            }
+            return this.head;
+        }
     }
 }

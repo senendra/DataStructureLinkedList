@@ -13,8 +13,9 @@ namespace LinkedList
             Console.WriteLine("On inserting 30 at 2nd position");
             list.Insert(2, 30);
             list.Display();
-            Console.WriteLine("On removing First element");
-            list.RemoveFirstElement();
+            Console.WriteLine("On removing First element "+ list.RemoveFirstElement().data);
+            list.Display();
+            Console.WriteLine("On removing last element "+ list.RemoveLastElement().data); 
             list.Display();
         }
     }
